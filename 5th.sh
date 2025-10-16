@@ -2,7 +2,7 @@ echo "File with the read write and the execute permission for user in current di
 
 echo "______________________________________________________________________________"
 for file in *; do 
-if [ -f "$file" ] && [ -r "$file" ] && [ -w "$file" ] && [ -x "$file" ]; then 
+if [ -r "$file" ] && [ -w "$file" ] && [ -x "$file" ]; then 
 echo "$file"
 fi 
 done 
