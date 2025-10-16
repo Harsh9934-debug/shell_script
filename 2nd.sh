@@ -10,4 +10,5 @@ echo  "--- head (first 5 lines) ---"
 head  5 "$file"
 
 read -p "Enter keyword to search: " kw
-echo  "--- grep ---"; grep "$kw" "$file"
+echo  "--- grep ---"; 
+grep "$kw" "$file"
