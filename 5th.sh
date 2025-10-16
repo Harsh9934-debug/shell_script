@@ -13,6 +13,7 @@ echo
 echo "------------------ Using head (first 5 lines) -----------------"
 head -n 5 "$file"
 echo
+
 echo "------------------ Using grep ----------------"
 read -p "Enter a keyword to search: " keyword
 grep --color=auto "$keyword" "$file"
