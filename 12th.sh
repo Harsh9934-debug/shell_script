@@ -4,7 +4,7 @@ echo "Creating a zombie process..."
   echo "Child process $$ exiting..."
   exit 0
 ) &
-child_pid=$!
+
 echo "Child PID: $child_pid"
 echo "Parent PID: $$"
 sleep 20
