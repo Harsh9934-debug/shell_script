@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Creating a zombie process..."
-
+child_pid=$$
 echo "Child PID: $child_pid"
 echo "Parent PID: $$"
 echo "Zombie sleep for the 20 second"
