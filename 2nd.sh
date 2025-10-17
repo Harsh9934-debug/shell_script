@@ -5,7 +5,7 @@ echo "Enter content (Ctrl+D to finish):"
 cat > "$file"
 
 echo  "--- cat ---";
- cat "$file"
+cat "$file"
 echo  "--- more ---"; 
 more "$file"
 echo  "--- head (first 5 lines) ---"
