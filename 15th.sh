@@ -1,6 +1,6 @@
 FILE="employee.txt"
 read -p "Enter the user ID :" id
-record=$(grep "^$id," "$FILE")
+record=$(grep "$id," "$FILE")
 
 name=$(echo "$record" | cut -d',' -f2)
 salary=$(echo "$record" | cut -d',' -f3)
