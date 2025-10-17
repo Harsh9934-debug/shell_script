@@ -1,0 +1,30 @@
+#!/bin/bash
+read -p "Enter the first file name: " file1
+echo "Enter content for $file1 (press Ctrl+D to finish):"
+cat > "$file1"
+
+read -p "Enter the second file name: " file2
+echo "Enter content for $file2 (press Ctrl+D to finish):"
+cat > "$file2"
+
+if cmp -s "$file1" "$file2"; then
+    echo "Files are identical. Deleting '$file2'."
+    rm "$file2"
+else
+    echo "Files are different. Nothing deleted."
+fi
+read -p "Enter the name of the file: " name
+echo "Enter the content inside the file"
+cat > $name
+
+chars=$(wc -m < "$name")
+words=$(wc -w < "$name")
+lines=$(wc -l < "$name")
+echo "$chars"
+echo "$words"
+echo "$lines"#!/bin/bash
+
+read -p "Enter directory path: " dir
+echo "Files in $dir:"
+cd $dir
+ls $dir
